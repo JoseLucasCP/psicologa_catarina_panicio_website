@@ -1,3 +1,46 @@
+/* cores do projeto */
+/* lembrar que posso utilizar os nomes como variavel */
+:root {
+
+    --azul-principal: #014A7F;
+
+    --azul-secundario: #6F9DB8;
+
+    --azul-claro: #AFC6D8;
+
+    --azul-petroleo: #17354A;
+
+    --off-white: #F8F6F2;
+
+    --cinza-azulado: #D9E3EC;
+
+    --branco: #FFFFFF;
+}
+
+/* reset dos estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--off-white) /*usando a variavel do 'root' das cores definidas para contruir o css*/;
+    color: var(--azul-petroleo);
+    line-height: 1.6;
+}
+
+h1,h2,h3 {
+    font-family: "Playfair Display", serif;
+    color: var(--azul-principal);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
