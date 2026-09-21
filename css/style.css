@@ -16,6 +16,7 @@
 
     --branco: #FFFFFF;
 }
+/* cores do projeto - Fim*/
 
 /* reset dos estilos */
 * {
@@ -44,6 +45,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+/* reset dos estilos - FIM*/
 
 /*Cabeçalho*/
 
@@ -84,6 +86,8 @@ a {
     color: var(--azul-principal);
     transition: color 0.3s;
 }
+/*Cabeçalho - FIM*/
+
 
 /*Sobre*/
 
@@ -125,3 +129,188 @@ a {
 .about-content p:last-child {
     margin-bottom: 0;
 }
+/*Sobre - FIM*/
+
+/*Atendimento*/
+
+.services {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+}
+
+.services-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.services-header {
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+
+.services .section-subtitle {
+    color: var(--azul-claro);
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--branco);
+}
+
+.services-header > p:last-child {
+    max-width: 550px;
+}
+
+.services-list {
+    display: flex;
+    gap: 30px;
+}
+
+.service-card {
+    max-width: 500px;
+    padding: 32px;
+    background-color: var(--off-white);
+    color: var(--azul-petroleo);
+    border-radius: 12px;
+}
+
+.service-card h3 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.service-card p {
+    margin-bottom: 16px;
+}
+
+.service-card p:last-child {
+    margin-bottom: 0;
+}
+/*Atendimento - FIM*/
+
+/*Para Empresas*/
+
+.companies {
+    background-color: var(--off-white);
+}
+
+.companies-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.companies-header {
+    max-width: 520px;
+}
+
+.companies h2 {
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.companies-card {
+    padding: 36px;
+    background-color: var(--cinza-azulado);
+    border-radius: 12px;
+}
+
+.companies-card h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.companies-card p {
+    margin-bottom: 16px;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 13px 28px;
+    border: 1px solid var(--azul-principal);
+    border-radius: 30px;
+    color: var(--azul-principal);
+    font-weight: 500;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+}
+/*Para Empresas - FIM*/
+
+/*Como Funciona*/
+
+.process {
+    background-color: var(--cinza-azulado);
+}
+
+.process-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.process-header {
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+
+.process h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.process-header > p:last-child {
+    max-width: 550px;
+}
+
+.process-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.process-card {
+    padding: 32px;
+    background-color: var(--off-white);
+    border-radius: 12px;
+}
+
+.process-number {
+    display: block;
+    margin-bottom: 24px;
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    color: var(--azul-secundario);
+}
+
+.process-card h3 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.process-card p {
+    font-size: 15px;
+}
+/*Como Funciona - FIM*/
