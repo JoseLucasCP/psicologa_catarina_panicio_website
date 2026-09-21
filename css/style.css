@@ -88,6 +88,46 @@ a {
 }
 /*Cabeçalho - FIM*/
 
+/* Home */
+
+.home {
+    background-color: var(--cinza-azulado);
+}
+
+.home-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.home-content {
+    max-width: 700px;
+}
+
+.home-subtitle {
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--azul-principal);
+}
+
+.home h1 {
+    margin-bottom: 24px;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.home-description {
+    max-width: 550px;
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+/* Home - FIM */
 
 /*Sobre*/
 
@@ -314,3 +354,141 @@ a {
     font-size: 15px;
 }
 /*Como Funciona - FIM*/
+
+/*Contato*/
+
+.contact {
+    background-color: var(--azul-petroleo);
+    color: var(--branco);
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.contact-content {
+    max-width: 650px;
+}
+
+.contact .section-subtitle {
+    color: var(--azul-claro);
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--branco);
+}
+
+.contact-content > p:last-child {
+    max-width: 600px;
+}
+
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 220px;
+    font-style: normal;
+}
+
+/*Botão de contato*/
+.contact-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: var(--branco);
+    color: var(--azul-principal);
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+    transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: var(--azul-claro);
+    color: var(--azul-petroleo);
+}
+
+/*Botão do Instagram*/
+.contact-instagram {
+    text-align: center;
+    color: var(--branco);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.contact-instagram:hover {
+    color: var(--azul-claro);
+}
+/*Contato - FIM*/
+
+/*Rodapé*/
+.site-footer {
+    background-color: var(--azul-petroleo);
+    color: var(--branco);
+    border-top: 1px solid var(--azul-secundario);
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0 30px;
+}
+
+.footer-brand {
+    margin-bottom: 40px;
+}
+
+.footer-name {
+    margin-bottom: 6px;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    color: var(--branco);
+}
+
+.footer-brand p {
+    margin-bottom: 4px;
+}
+
+.footer-nav {
+    margin-bottom: 40px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-nav a {
+    font-size: 14px;
+    color: var(--branco);
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: var(--azul-claro);
+}
+
+.footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid var(--azul-secundario);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 13px;
+}
+/*Rodapé - FIM*/
