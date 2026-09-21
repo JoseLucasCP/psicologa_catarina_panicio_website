@@ -44,3 +44,84 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/*Cabeçalho*/
+
+.site-header {
+    background-color: var(--off-white);
+}
+
+.logo img {
+    width: 220px;
+    height: auto;
+    display: block;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--azul-petroleo);
+}
+
+.nav-menu a:hover {
+    color: var(--azul-principal);
+    transition: color 0.3s;
+}
+
+/*Sobre*/
+
+.about {
+    background-color: var(--off-white);
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.about-content {
+    max-width: 750px;
+}
+
+.section-subtitle {
+    margin-bottom: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--azul-secundario);
+}
+
+.about h2 {
+    margin-bottom: 32px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
