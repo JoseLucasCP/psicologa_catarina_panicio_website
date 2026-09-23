@@ -47,6 +47,16 @@ a {
 }
 /* reset dos estilos - FIM*/
 
+/*Botão do menu*/
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--azul-petroleo);
+    cursor: pointer;
+}
+
 /*Cabeçalho*/
 
 .site-header {
@@ -492,3 +502,209 @@ a {
     font-size: 13px;
 }
 /*Rodapé - FIM*/
+
+/*
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    /*Cabeçalho*/
+
+    .navbar {
+        position: relative;
+        padding: 16px 0;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: var(--off-white);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    /*Home*/
+
+    .home-container {
+        padding: 70px 0;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-subtitle {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .home h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .home-description {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    /*Sobre*/
+
+    .about-container {
+        padding: 70px 0;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+    /*Atendimento*/
+
+    .services-container {
+        padding: 70px 0;
+    }
+
+    .services-header {
+        max-width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .services h2 {
+        font-size: 32px;
+    }
+
+    .services-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card {
+        max-width: 100%;
+        width: 100%;
+        padding: 26px;
+    }
+
+    .service-card h3 {
+        font-size: 23px;
+    }
+
+    /*Para Empresas*/
+
+    .companies-container {
+        padding: 70px 0;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .companies-header {
+        max-width: 100%;
+    }
+
+    .companies h2 {
+        font-size: 32px;
+    }
+
+    .companies-card {
+        padding: 26px;
+    }
+
+    .companies-card h3 {
+        font-size: 24px;
+    }
+
+    /*Como Funciona*/
+
+    .process-container {
+        padding: 70px 0;
+    }
+
+    .process-header {
+        max-width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .process h2 {
+        font-size: 32px;
+    }
+
+    .process-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .process-card {
+        padding: 26px;
+    }
+
+    /*Contato*/
+
+    .contact-container {
+        padding: 70px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+    .contact-content {
+        max-width: 100%;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .contact-actions {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .contact .contact-button {
+        width: 100%;
+    }
+
+    /*Rodapé*/
+
+    .footer-container {
+        padding: 50px 0 30px;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        gap: 10px;
+    }
+
+}

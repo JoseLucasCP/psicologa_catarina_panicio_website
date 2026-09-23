@@ -29,21 +29,17 @@
 
     <!-- Cabeçalho -->
 
-    <header class="site-header"> <!-- Adicionado menu de navegação e classes -->
+    <header class="site-header"> <!-- Adicionado menu de navegação-->
 
         <nav class="navbar" aria-label="Navegação principal">
 
             <a class="logo" href="#home">
-
-                <img
-                    src="assets/images/logo.svg"
-                    alt="Psicóloga Catarina Panício"
-                >
-
+                <img src="assets/images/logo.svg" alt="Psicóloga Catarina Panício">
             </a>
 
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu"> ☰ </button>
 
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
 
                 <li>
                     <a href="#home">
@@ -478,6 +474,8 @@
 
     </footer>
 
+    <script src="js/script.js"></script>
+    
 </body>
 
 </html>
