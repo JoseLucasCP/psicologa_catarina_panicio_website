@@ -45,10 +45,17 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--azul-secundario);
+    outline-offset: 4px;
+}
 /* reset dos estilos - FIM*/
 
 /*Botão do menu*/
 .menu-toggle {
+    width: 40px;
+    height: 40px;
     display: none;
     background: none;
     border: none;
@@ -90,13 +97,25 @@ a {
     font-size: 14px;
     font-weight: 500;
     color: var(--azul-petroleo);
+    transition: color 0.3s;
 }
 
 .nav-menu a:hover {
     color: var(--azul-principal);
-    transition: color 0.3s;
 }
 /*Cabeçalho - FIM*/
+
+/* Botão de contato - estilo base */
+
+.contact-button {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
 
 /* Home */
 
@@ -135,6 +154,18 @@ a {
     max-width: 550px;
     margin-bottom: 32px;
     font-size: 16px;
+}
+
+.home .contact-button {
+    background-color: var(--azul-principal);
+    border: 1px solid var(--azul-principal);
+    color: var(--branco);
+}
+
+.home .contact-button:hover {
+    background-color: var(--azul-secundario);
+    border-color: var(--azul-secundario);
+    color: var(--branco);
 }
 
 /* Home - FIM */
@@ -286,20 +317,14 @@ a {
     margin-bottom: 16px;
 }
 
-.contact-button {
-    display: inline-block;
+.companies-card .contact-button {
     margin-top: 12px;
-    padding: 13px 28px;
+    background-color: transparent;
     border: 1px solid var(--azul-principal);
-    border-radius: 30px;
     color: var(--azul-principal);
-    font-weight: 500;
-    transition:
-        background-color 0.3s,
-        color 0.3s;
 }
 
-.contact-button:hover {
+.companies-card .contact-button:hover {
     background-color: var(--azul-principal);
     color: var(--branco);
 }
@@ -412,21 +437,15 @@ a {
 }
 
 /*Botão de contato*/
-.contact-button {
-    display: inline-block;
-    padding: 14px 28px;
+.contact .contact-button {
     background-color: var(--branco);
+    border: 1px solid var(--branco);
     color: var(--azul-principal);
-    border-radius: 30px;
-    text-align: center;
-    font-weight: 600;
-    transition:
-    background-color 0.3s,
-    color 0.3s;
 }
 
-.contact-button:hover {
+.contact .contact-button:hover {
     background-color: var(--azul-claro);
+    border-color: var(--azul-claro);
     color: var(--azul-petroleo);
 }
 
@@ -521,7 +540,9 @@ a {
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-menu {
@@ -705,6 +726,18 @@ a {
         justify-content: flex-start;
 
         gap: 10px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition: none !important;
     }
 
 }
