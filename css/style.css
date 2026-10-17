@@ -49,6 +49,7 @@ a {
 a:focus-visible, button:focus-visible {
     outline: 3px solid var(--azul-secundario);
     outline-offset: 4px;
+    border-radius: 4px;
 }
 /* reset dos estilos - FIM*/
 
@@ -62,6 +63,7 @@ a:focus-visible, button:focus-visible {
     font-size: 28px;
     color: var(--azul-petroleo);
     cursor: pointer;
+    line-height: 1;
 }
 
 /*Cabeçalho*/
@@ -526,7 +528,7 @@ a:focus-visible, button:focus-visible {
    MOBILE
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     /*Cabeçalho*/
 
@@ -557,10 +559,22 @@ a:focus-visible, button:focus-visible {
         align-items: flex-start;
         gap: 16px;
         z-index: 1000;
+        border-top: 1px solid var(--cinza-azulado);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
     }
 
     .nav-menu.active {
         display: flex;
+    }
+
+    .nav-menu li {
+    width: 100%;
+    }
+
+    .nav-menu a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
     }
 
     /*Home*/
