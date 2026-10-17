@@ -464,6 +464,115 @@ a:focus-visible, button:focus-visible {
 }
 /*Contato - FIM*/
 
+/*FAQ - Inicio*/
+
+.faq {
+    padding: 90px 0;
+    background-color: var(--off-white);
+}
+
+.faq-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.faq-header {
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.faq-header span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--azul-secundario);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.faq-header h2 {
+    margin-bottom: 12px;
+    font-size: 36px;
+}
+
+.faq-header p {
+    font-size: 16px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-azulado);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 22px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: none;
+    border: none;
+    color: var(--azul-petroleo);
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    background-color: var(--cinza-azulado);
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    color: var(--azul-principal);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    padding: 0 24px;
+    transition: grid-template-rows 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer p {
+    max-width: 850px;
+    overflow: hidden;
+    color: var(--azul-petroleo);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.faq-item.active .faq-answer {
+    grid-template-rows: 1fr;
+    padding-bottom: 22px;
+}
+
+.faq-item.active {
+    border-color: var(--azul-secundario);
+}
+
+.faq-item.active .faq-question {
+    background-color: var(--cinza-azulado);
+    color: var(--azul-principal);
+}
+
+/*FAQ - Fim*/
+
 /*Rodapé*/
 .site-footer {
     background-color: var(--azul-petroleo);
@@ -722,6 +831,34 @@ a:focus-visible, button:focus-visible {
 
     .contact .contact-button {
         width: 100%;
+    }
+
+    /*FAQ*/
+
+    .faq {
+        padding: 70px 0;
+    }
+
+    .faq-header {
+        max-width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .faq-header h2 {
+        font-size: 32px;
+    }
+
+    .faq-question {
+        padding: 20px;
+    }
+
+    .faq-answer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .faq-item.active .faq-answer {
+        padding-bottom: 20px;
     }
 
     /*Rodapé*/

@@ -67,3 +67,37 @@ document.addEventListener("click", function (event) {
         fecharMenu();
     }
 });
+
+/* FAQ */
+
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(function (question) {
+
+    question.addEventListener("click", function () {
+
+        const faqItem = question.closest(".faq-item");
+        const faqIcon = question.querySelector(".faq-icon");
+        const faqAberta = faqItem.classList.contains("active");
+
+        /* Fecha todas as perguntas */
+        faqQuestions.forEach(function (otherQuestion) {
+
+            const otherItem = otherQuestion.closest(".faq-item");
+            const otherIcon = otherQuestion.querySelector(".faq-icon");
+
+            otherItem.classList.remove("active");
+            otherQuestion.setAttribute("aria-expanded", "false");
+            otherIcon.textContent = "+";
+        });
+
+        /* Abre a pergunta clicada e fecha outra caso ela estivesse aberta */
+        if (!faqAberta) {
+            faqItem.classList.add("active");
+            question.setAttribute("aria-expanded", "true");
+            faqIcon.textContent = "−";
+        }
+
+    });
+
+});
