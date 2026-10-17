@@ -158,6 +158,23 @@ a:focus-visible, button:focus-visible {
     font-size: 16px;
 }
 
+.home-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+    color: var(--azul-petroleo);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.home-info span:not(:first-child)::before {
+    content: "•";
+    margin-right: 10px;
+    color: var(--azul-secundario);
+}
+
 .home .contact-button {
     background-color: var(--azul-principal);
     border: 1px solid var(--azul-principal);
@@ -282,6 +299,19 @@ a:focus-visible, button:focus-visible {
     margin-bottom: 0;
 }
 
+.service-card .contact-button {
+    margin-top: 12px;
+    background-color: var(--azul-principal);
+    border: 1px solid var(--azul-principal);
+    color: var(--branco);
+}
+
+.service-card .contact-button:hover {
+    background-color: var(--azul-secundario);
+    border-color: var(--azul-secundario);
+    color: var(--branco);
+}
+
 /*Atendimento - FIM*/
 
 /*Para Empresas*/
@@ -325,6 +355,25 @@ a:focus-visible, button:focus-visible {
 
 .companies-card p {
     margin-bottom: 16px;
+}
+
+.companies-services {
+    margin: 20px 0 24px;
+    padding-left: 20px;
+
+    color: var(--azul-petroleo);
+}
+
+.companies-services li {
+    margin-bottom: 10px;
+}
+
+.companies-services li:last-child {
+    margin-bottom: 0;
+}
+
+.companies-services li::marker {
+    color: var(--azul-secundario);
 }
 
 .companies-card .contact-button {
@@ -766,6 +815,11 @@ a:focus-visible, button:focus-visible {
     .home-description {
         max-width: 100%;
         font-size: 15px;
+    }
+
+    .home-info {
+        gap: 8px;
+        font-size: 12px;
     }
 
     /*Sobre*/
