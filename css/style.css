@@ -763,6 +763,56 @@ a:focus-visible, button:focus-visible {
 }
 /*Rodapé - FIM*/
 
+/* 404 Início */
+
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: var(--off-white);
+    text-align: center;
+}
+
+.error-logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 24px;
+}
+
+.error-code {
+    margin-bottom: 8px;
+    color: var(--azul-secundario);
+    font-family: "Playfair Display", serif;
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.error-page h1 {
+    margin-bottom: 16px;
+    font-size: 36px;
+}
+
+.error-page p {
+    max-width: 500px;
+    margin-bottom: 28px;
+    color: var(--azul-petroleo);
+}
+
+.error-page .contact-button {
+    background-color: var(--azul-principal);
+    border: 1px solid var(--azul-principal);
+    color: var(--branco);
+}
+
+.error-page .contact-button:hover {
+    background-color: var(--azul-secundario);
+    border-color: var(--azul-secundario);
+}
+/* 404 Fim */
+
 /*
    MOBILE
 ========================= */
@@ -1016,6 +1066,18 @@ a:focus-visible, button:focus-visible {
         justify-content: flex-start;
 
         gap: 10px;
+    }
+
+    .error-logo {
+        width: 150px;
+    }
+
+    .error-code {
+        font-size: 52px;
+    }
+
+    .error-page h1 {
+        font-size: 30px;
     }
 
 }
